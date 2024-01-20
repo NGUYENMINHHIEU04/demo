@@ -1,0 +1,97 @@
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Survery</h1>
+    <form>
+        <div class="from-control">
+            <label for="name">Your name</label>
+            <input type="text" name="name" id="name" placeholder="Fill your name">
+        </div>
+
+        <div class="from-control">
+            <label for="Email">Your email</label>
+            <input type="text" name="Email" id="Email" placeholder="Fill your email">
+        </div>
+
+        <div class="from-control">
+            <label for="Age">Your age</label>
+            <input type="number" name="Age" id="age" placeholder="Fill your age">
+        </div>
+
+        <div class="form-control">
+            <label for="role" id="label-role">Your role:</label>
+            <select name="role" id="role">
+                <label for="role" id="label-role">
+                    <option value="student">Student</option>
+                    <option value="teacher">Teacher</option>
+                    <option value="professor">Professor</option>
+                    <option value="other">Other</option>
+            </select>
+        </div>
+        <!-- Create Button -->
+        <div class="from-control">
+            <label for="recomand">Would you like it club</label>
+            <br>
+            <label for="recomand1">
+            <input type="radio" name="recomand" id="recomand">yes</label>
+            <label for="recomand2">
+            <input type="radio" name="recomand" id="recomand">yes of couse</label>
+            <label for="recomand3">
+            <input type="radio" name="recomand" id="recomand">mabe</label>
+            </label>
+        </div>
+        <div class="from-control">
+            <label for="comment">Discribe your self</label>
+            <br>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+
+        </div>
+        <button type="submit" value="submit">
+            Submit
+        </button>
+    </form>
+</body>
+
+</html>
+<style>
+    body {
+        background-color: aqua;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+    }
+
+    form {
+        background-color: aquamarine;
+        max-width: 550px;
+        margin: 50px auto;
+        padding: 30px 20px;
+        box-shadow: 2px 2px 10px color(srgb-linearred green blue);
+    }
+
+    .from-control {
+        text-align: left;
+        margin-bottom: 25px;
+        font-family: 'Times New Roman', Times, serif;
+
+    }
+    .from-control textarea , select{
+        border: 1px solid #fcfcfc;
+        border-radius: 5px;
+        padding: 10px;
+        display: block;
+        width: 100%;
+
+    }
+    .from-control input[type="radio"]{
+        display: inline-block;
+        width: auto;
+    }
+    .from-control textarea{
+        resize: vertical;
+    }
+
+</style>
